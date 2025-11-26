@@ -14,8 +14,7 @@ on:
           # TODO : Setup Python 3.11 avec cache pip
         - name: Python
           uses: | 
-            actions/checkout@v5 
-            actions/setup-python@v6
+            actions/setup-python@v5
             with:
               python-version: '3.11' 
               cache: "pip"
@@ -34,5 +33,5 @@ on:
         - name: Test
           run: |
             cd backend
-            uv run pytest -v -cov
+            uv run pytest -v --cov
 
