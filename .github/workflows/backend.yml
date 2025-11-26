@@ -2,9 +2,9 @@ name: Backend Tests
 on:
   push:
     branches: [main]
-
 jobs:
   test:
+    name : backend
     runs-on: ubuntu-latest
 
     steps:
