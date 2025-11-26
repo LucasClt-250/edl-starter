@@ -25,7 +25,7 @@ jobs:
 
         # TODO : Installez les dépendances (cd backend && uv sync)
       - name: dependances
-        uses: |
+        run: |
           cd backend
           uv sync
 
