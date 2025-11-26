@@ -38,4 +38,5 @@ jobs:
         # TODO : Vérifiez le build
       - name: Build verif
         run: |
+          cd frontend
           npm run build
