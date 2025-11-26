@@ -21,7 +21,7 @@ jobs:
         
         # TODO : Installez UV avec pip
       - name: uv
-        uses: pip install uv
+        run: pip install uv
 
         # TODO : Installez les dépendances (cd backend && uv sync)
       - name: dependances
